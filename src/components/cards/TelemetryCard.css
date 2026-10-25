@@ -1,0 +1,6 @@
+.telemetry { display: flex; flex-direction: column; justify-content: center; gap: 20px; height: 100%; padding: 24px; background: var(--bg); }
+.telemetry__delta,
+.telemetry__row { display: flex; align-items: baseline; justify-content: space-between; font-size: 12px; color: var(--text-soft); }
+.telemetry__row { margin-bottom: 6px; }
+.mono-value { font-family: var(--font-mono); color: var(--white); }
+.telemetry__delta .mono-value { font-size: 18px; font-weight: 700; }

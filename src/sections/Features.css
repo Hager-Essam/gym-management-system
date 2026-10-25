@@ -1,0 +1,4 @@
+.features__status { display: flex; align-items: center; gap: 8px; white-space: nowrap; color: var(--text-soft); }
+.features__grid { display: grid; gap: 16px; margin-top: 40px; grid-template-columns: 1fr; }
+@media (min-width: 768px) { .features__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .features__grid { grid-template-columns: repeat(3, 1fr); } }

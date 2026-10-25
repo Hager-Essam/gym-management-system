@@ -1,0 +1,2 @@
+.form-alert { display: flex; align-items: flex-start; gap: 10px; padding: 12px 14px; border: 1px solid rgba(255, 107, 107, 0.4); border-radius: 8px; background: rgba(255, 107, 107, 0.08); font-size: 13px; color: #ffb0b0; }
+.form-alert .material-symbols-outlined { margin-top: 1px; color: #ff6b6b; }

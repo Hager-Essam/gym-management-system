@@ -1,0 +1,3 @@
+.feature { display: flex; flex-direction: column; height: 100%; padding: 24px; }
+.feature__title { font-size: 15px; font-weight: 700; line-height: 1.35; color: var(--white); }
+.feature__text { flex: 1; margin-top: 8px; font-size: 13px; line-height: 1.65; color: var(--text-soft); }

@@ -1,0 +1,15 @@
+.image-slot { position: relative; overflow: hidden; background: var(--surface-2); }
+.image-slot img,
+.image-slot__placeholder,
+.image-slot__shade { position: absolute; inset: 0; width: 100%; height: 100%; }
+.image-slot img { object-fit: cover; }
+.image-slot__placeholder {
+  background-image:
+    radial-gradient(ellipse at 30% 20%, rgba(47, 227, 143, 0.22), transparent 55%),
+    radial-gradient(ellipse at 80% 90%, rgba(47, 227, 143, 0.1), transparent 50%),
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: auto, auto, 28px 28px, 28px 28px;
+}
+.image-slot__shade { background: linear-gradient(to top, rgba(8, 12, 13, 0.8), rgba(8, 12, 13, 0.1) 60%, transparent); }
+.image-slot > *:not(img):not(.image-slot__placeholder):not(.image-slot__shade) { z-index: 1; }

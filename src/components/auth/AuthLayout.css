@@ -1,0 +1,42 @@
+.auth { display: grid; min-height: 100vh; }
+@media (min-width: 1024px) { .auth { grid-template-columns: 5fr 6fr; } }
+
+/* ---- Left brand panel (desktop only) ---- */
+.auth__brand {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 48px;
+  padding: 40px 48px;
+  border-right: 1px solid var(--border);
+  background: radial-gradient(ellipse at 20% 15%, rgba(47, 227, 143, 0.16), transparent 55%), var(--bg-deep);
+}
+@media (min-width: 1024px) { .auth__brand { display: flex; } }
+.auth__pitch h2 { max-width: 460px; font-size: 38px; font-weight: 900; line-height: 1.05; letter-spacing: -0.02em; text-transform: uppercase; color: var(--white); }
+.auth__pitch ul { display: grid; gap: 14px; margin-top: 32px; font-size: 14px; color: var(--text); }
+.auth__pitch li { display: flex; align-items: center; gap: 12px; }
+.auth__readout { padding: 14px; border: 1px solid var(--border-strong); border-radius: 10px; background: rgba(255, 255, 255, 0.02); }
+.auth__readout .mono { display: flex; justify-content: space-between; margin-bottom: 10px; }
+
+/* ---- Right form panel ---- */
+.auth__panel { display: flex; flex-direction: column; padding: 24px 20px 48px; }
+@media (min-width: 640px) { .auth__panel { padding-inline: 48px; } }
+.auth__top { display: flex; align-items: center; justify-content: space-between; }
+.auth__home { display: inline-flex; align-items: center; gap: 4px; font-size: 13px; color: var(--text-soft); }
+.auth__home:hover { color: var(--white); }
+@media (min-width: 1024px) { .auth__top .logo { display: none; } .auth__top { justify-content: flex-end; } }
+
+.auth__card { width: 100%; max-width: 440px; margin: auto; padding-top: 32px; }
+.auth__card h1 { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; color: var(--white); }
+.auth__subtitle { margin: 8px 0 28px; font-size: 14px; line-height: 1.6; color: var(--text-soft); }
+.auth__footer { margin-top: 24px; font-size: 13px; text-align: center; color: var(--text-soft); }
+.auth__footer a { font-weight: 600; color: var(--accent); }
+.auth__footer a:hover { text-decoration: underline; }
+
+/* Form layout shared by Login and Register */
+.auth-form { display: grid; gap: 18px; }
+.auth-form__row { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 13px; }
+.auth-form__row a { color: var(--accent); }
+.auth-form__row a:hover { text-decoration: underline; }
+.auth-form__two { display: grid; gap: 18px; }
+@media (min-width: 560px) { .auth-form__two { grid-template-columns: 1fr 1fr; } }

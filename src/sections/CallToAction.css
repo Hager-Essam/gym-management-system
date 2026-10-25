@@ -1,0 +1,14 @@
+.cta { padding-bottom: 80px; }
+.cta__box {
+  padding: 56px 24px;
+  text-align: center;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: radial-gradient(ellipse at 50% 0%, rgba(47, 227, 143, 0.14), transparent 65%), var(--surface);
+}
+@media (min-width: 640px) { .cta__box { padding-inline: 48px; } }
+.cta__eyebrow { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 12px; font-size: 11px; letter-spacing: 0.18em; color: var(--accent); }
+.cta__box h2 { max-width: 640px; margin: 0 auto; font-size: clamp(28px, 4vw, 38px); font-weight: 800; line-height: 1.05; letter-spacing: -0.02em; text-transform: uppercase; color: var(--white); }
+.cta__desc { max-width: 560px; margin: 16px auto 0; font-size: 15px; line-height: 1.65; color: var(--text-soft); }
+.cta__buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 32px; }
+.btn--lg { padding: 12px 20px; }

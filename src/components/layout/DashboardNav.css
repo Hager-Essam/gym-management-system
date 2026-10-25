@@ -1,0 +1,123 @@
+.dash-nav {
+  background: var(--color-card);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  background: rgba(15, 20, 25, 0.95);
+}
+
+.dash-nav__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  gap: 2rem;
+}
+
+.dash-nav__left {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex: 1;
+}
+
+.dash-nav__logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.dash-nav__links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dash-nav__link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.dash-nav__link:hover {
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+.dash-nav__link .material-symbols-outlined {
+  font-size: 20px;
+}
+
+.dash-nav__right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.dash-nav__user {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+.dash-nav__user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dash-nav__user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.dash-nav__user-name {
+  font-weight: 600;
+  color: var(--color-text);
+  font-size: 0.875rem;
+  line-height: 1.2;
+}
+
+.dash-nav__user-role {
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 1024px) {
+  .dash-nav__links {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .dash-nav__inner {
+    padding: 0.75rem 1rem;
+  }
+
+  .dash-nav__user-info {
+    display: none;
+  }
+
+  .dash-nav__user {
+    padding: 0.5rem;
+  }
+}

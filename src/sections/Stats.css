@@ -1,0 +1,4 @@
+.stats { padding: 40px 0; border-bottom: 1px solid var(--border); }
+.stats__grid { display: grid; gap: 16px; grid-template-columns: 1fr; }
+@media (min-width: 640px) { .stats__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .stats__grid { grid-template-columns: repeat(4, 1fr); } }

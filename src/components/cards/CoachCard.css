@@ -1,0 +1,15 @@
+.coach { overflow: hidden; }
+.coach__photo { height: 224px; }
+.coach__badge {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: rgba(8, 12, 13, 0.8);
+  color: var(--accent);
+}
+.coach__body { padding: 20px; }
+.coach__name { font-size: 16px; font-weight: 700; color: var(--white); }
+.coach__role { margin-top: 4px; line-height: 1.4; }
+.coach__bio { margin-top: 12px; font-size: 13px; line-height: 1.65; color: var(--text-soft); }

@@ -1,0 +1,22 @@
+.dash__bar { border-bottom: 1px solid var(--border); background: var(--bg-deep); }
+.dash__bar-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.dash__user { display: flex; align-items: center; gap: 16px; }
+.dash__name { display: none; font-size: 13px; color: var(--text-soft); }
+@media (min-width: 640px) { .dash__name { display: block; } }
+
+.dash__main { padding-block: 56px 80px; }
+.dash__main .mono { display: flex; align-items: center; gap: 8px; font-size: 11px; }
+.dash__main h1 { margin-top: 12px; font-size: clamp(28px, 4vw, 38px); font-weight: 800; letter-spacing: -0.02em; color: var(--white); }
+.dash__lead { margin-top: 8px; font-size: 14px; color: var(--text-soft); }
+
+.dash__grid { display: grid; gap: 16px; margin-top: 40px; grid-template-columns: 1fr; }
+@media (min-width: 768px) { .dash__grid { grid-template-columns: repeat(3, 1fr); } }
+.dash__card { padding: 24px; }
+.dash__card h2 { margin-top: 12px; font-size: 20px; font-weight: 700; color: var(--white); }
+.dash__price { margin-top: 8px; font-size: 28px; font-weight: 800; color: var(--white); }
+.dash__price span { font-size: 14px; font-weight: 400; color: var(--text-muted); }
+.dash__muted { margin-top: 8px; font-size: 13px; line-height: 1.6; color: var(--text-soft); }
+.dash__link { display: inline-flex; align-items: center; margin-top: 12px; font-size: 13px; font-weight: 600; color: var(--accent); }
+.dash__steps { display: grid; gap: 12px; margin-top: 16px; font-size: 13px; }
+.dash__steps li { display: flex; align-items: center; gap: 10px; }
+.dash__steps .material-symbols-outlined { color: var(--text-muted); }

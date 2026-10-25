@@ -1,0 +1,5 @@
+.facility { overflow: hidden; }
+.facility__photo { height: 192px; }
+.facility__body { padding: 20px; }
+.facility__body h3 { font-size: 15px; font-weight: 700; color: var(--white); }
+.facility__body p { margin-top: 8px; font-size: 13px; line-height: 1.65; color: var(--text-soft); }
